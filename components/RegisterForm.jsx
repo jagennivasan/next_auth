@@ -8,6 +8,7 @@ export default function RegisterForm() {
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
   const [error, setError] = useState("");
+
   const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -81,6 +82,7 @@ export default function RegisterForm() {
             onChange={(e) => {
               setpassword(e.target.value);
             }}
+            
           />
           <button className=" mt-3 font-bold  text-white bg-blue-500 rounded-lg px-1 py-1 hover:bg-blue-800 transition duration-200 ease-in-out">
             Register
